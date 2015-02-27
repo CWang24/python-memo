@@ -17,3 +17,5 @@ and modify the ***.spec, make "console=False" instead of True as it was.
 Then run the above step again while this time add -w, i.e.:
 python pyinstaller.py -F -w c:\scripts\***.py
 Done~
+
+If you don't need your work to be an .exe, just modify ***.py to ***.pyw and done.
