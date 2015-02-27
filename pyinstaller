@@ -1,0 +1,9 @@
+go to install directory of pyinstalller, make sure the folder 
+contains file: pyinstaller.py(for my PC it's in c:/python27/pyinstaller)
+
+Then input:
+python pyinstaller.py -F c:\scripts\***.py
+
+"***.py" is your script to be converted, "-F" means your want this to be a single file, otherwise you will get a folder.
+
+For install pyinstaller, please go to http://www.cnblogs.com/balian/archive/2012/11/21/2780503.html.
