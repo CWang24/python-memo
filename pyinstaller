@@ -12,7 +12,7 @@ Thanks to http://www.blog.pythonlibrary.org/2010/08/10/a-pyinstaller-tutorial-bu
 
 When I use pyinstaller to process my GUI made with wxPython, a console window always come along with the GUI I designed.
 To suppress this console window or cmd window, after you took the step above, 
-go to the projecto folder pyintaller created for your code 
+go to the project folder pyintaller created for your code 
 and modify the ***.spec, make "console=False" instead of True as it was.
 Then run the above step again while this time add -w, i.e.:
 python pyinstaller.py -F -w c:\scripts\***.py
