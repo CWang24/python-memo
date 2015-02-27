@@ -7,3 +7,13 @@ python pyinstaller.py -F c:\scripts\***.py
 "***.py" is your script to be converted, "-F" means your want this to be a single file, otherwise you will get a folder.
 
 For install pyinstaller, please go to http://www.cnblogs.com/balian/archive/2012/11/21/2780503.html.
+=======================02/27/2015===========================
+Thanks to http://www.blog.pythonlibrary.org/2010/08/10/a-pyinstaller-tutorial-build-a-binary-series/
+
+When I use pyinstaller to make my GUI made with wxPython, a console window always come along with the GUI I designed.
+To suppress this console window or cmd window, after you took the step above, 
+go to the projecto folder pyintaller created for your code 
+and modify the ***.spec, make "console=False" instead of True as it was.
+Then run the above step again while this time add -w, i.e.:
+python pyinstaller.py -F -w c:\scripts\***.py
+Done~
