@@ -3,12 +3,12 @@ To make a non-greedy matching, use the question mark ?.
 e.g.
 import re
 item='abcdddddddddddddd'
-pattern = re.compile("a.+")
-m=re.findall(pattern,item)
-if m:
-    res = pattern.search(item).groups()
-		print res[0]+'    '+res[1]
-		
+pattern1 = re.compile("a(.+)d")
+pattern2 = re.compile("a.+?d")
+m1=re.match(pattern1,item)
+print m1.group()
+m2=re.match(pattern2,item)
+print m2.group()
 ###################################################
 第一个元字符是圆点（.）。在正则表达式中，圆点用于匹配除了换行符外的任何单个字符。
 +用于使前面的字符与后面的字符至少匹配一次，
